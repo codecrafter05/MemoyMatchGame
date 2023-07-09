@@ -1,3 +1,11 @@
 body {
-    background-color: black;
+    background-color: #884A39;
+}
+
+.image-logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    transform: scale(0.9);
 }
