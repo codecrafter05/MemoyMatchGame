@@ -61,11 +61,11 @@ window.onload = function() {
 
 
 
-const match = document.querySelector('.your-container');
-for (let i = 0; i < 25; i++) {
-    let div = document.createElement('div');
-    div.classList.add(`box`);
-    div.setAttribute('id',`g${i}`)
-    match.appendChild(div);
-}
+// const match = document.querySelector('.your-container');
+// for (let i = 0; i < 25; i++) {
+//     let div = document.createElement('div');
+//     div.classList.add(`box`);
+//     div.setAttribute('id',`g${i}`)
+//     match.appendChild(div);
+// }
 
