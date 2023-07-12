@@ -70,9 +70,13 @@ const imagesArray = [
   // Cover all the images on the game board
   function coverImages() {
     const images = document.querySelectorAll('#gc img');
-    images.forEach((img) => {
-      img.style.visibility = 'hidden';
-    });
+    // Loop through the images array and set visibility hidden on each
+    for(let i=0; i < images.length ;i++){
+        images[i].style.visibility = "hidden";
+    }
+    // images.forEach((img) => {
+    //   img.style.visibility = 'hidden';
+    // });
   }
   
   // Handle user clicks on the game board

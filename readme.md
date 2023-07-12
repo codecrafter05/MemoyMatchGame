@@ -22,7 +22,7 @@ This is a simple memory matching game where the objective is to match pairs of i
 
 ## Difficulty Levels
 
-- **Easy**: 3x3 game board with 6 pairs of images.
+- **Easy**: 3x3 game board with 4 pairs of images.
 - **Medium**: 4x4 game board with 8 pairs of images.
 - **Hard**: 5x5 game board with 12 pairs of images (one image will appear thrice).
 
