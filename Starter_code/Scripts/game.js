@@ -1,5 +1,5 @@
 
-
+// Import all the imgs in arry
 const imagesArray = [
     '001.svg', '002.svg', '003.svg', '004.svg',
     '005.svg', '006.svg', '007.svg', '008.svg',
