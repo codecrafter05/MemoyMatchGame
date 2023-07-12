@@ -19,17 +19,38 @@ body {
 }
 
 .image-logo {
-    display:flex;
+    display: block;
     margin: 0;
-    transform: scale(0.9);
-}
-
-
-.box {
+    width: 100%;
+    height: auto;
+  }
+  
+  .box {
+    position: relative;
     background-color: rgba(249, 224, 187, 1);
     border: 1px solid #ffffff;
     border-radius: 10px;
-}
+    overflow: hidden;
+    padding: 0;
+    margin: 0;
+  }
+
+  .box:hover {
+    filter: brightness(1.5);
+    cursor: pointer;
+  }
+  
+  .box img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    cursor: pointer;
+  }
 
 button {
     background: transparent;
