@@ -8,23 +8,31 @@ body {
     flex-direction: column;
 }
 .game-container {
-    display: grid;
-    grid-template-columns: repeat(5, 1fr);
-    grid-template-rows: repeat(5, 1fr);
-    gap: 8px;
-    width: 500px;
-    height: 500px;
-    margin-bottom: 40px;
-    margin-top: 20px;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(50px, 1fr));
+  grid-template-rows: repeat(auto-fit, minmax(50px, 1fr));
+  gap: 8px;
+  width: 90vw;
+  height: 90vw;
+  margin-bottom: 40px;
+  margin-top: 20px;
 }
 
-.image-logo {
-    display: block;
-    margin: 0;
-    width: 100%;
-    height: auto;
+
+@media screen and (min-width: 768px) {
+  .game-container {
+    width: 70vw;
+    height: 70vw;
   }
-  
+}
+
+@media screen and (min-width: 1024px) {
+  .game-container {
+    width: 500px;
+    height: 500px;
+  }
+}
+
   .box {
     position: relative;
     background-color: rgba(249, 224, 187, 1);
@@ -185,11 +193,34 @@ button {
     fill: rgb(239, 42, 16);
     transition: 1.5s;
   }
-  
-  .game-level {
-    padding-bottom: 5px;
 
-  }
+.score {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: nowrap;
+  padding: 5px;
+ 
+}
+
+
+#correct-matches {
+  color: #ffffff;
+  margin-top: 20px;
+  font-weight:bold;
+  font-size: 1.5rem; 
+}
+
+#incorrect-matches {
+  color: #ffffff;
+  margin-left: 20px;
+  margin-top: 20px;
+  font-weight:bold;
+  font-size: 1.5rem; 
+}
+
+  
+
 
   
 
